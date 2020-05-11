@@ -4,7 +4,7 @@ Natural Language Processing is the ability of a computer program to understand h
 
 as it is spoken.
 
-In other words, NPL is the mechanism that allows chatbots — like [NativeChat](https://www.progress.com/nativechat) — to analyse what users say, extract essential information and respond with appropriate answers.
+In other words, NLP is the mechanism that allows chatbots — like [NativeChat](https://www.progress.com/nativechat) — to analyse what users say, extract essential information and respond with appropriate answers.
 
 For example, if the user says: *"When does your shop open?"*, the chatbot should be able to match this question to a **opening-hours** conversation, and respond with: *"The shop opens from 9AM to 5PM"*.
 
@@ -37,11 +37,12 @@ Each time a user says something, NLP takes the user input and matches to the NLP
 ## NLP Model Training 
 
 Before we let our chatbots interact with the users, we need to train the NLP Model.
+
 But what does that even mean?
 
 This is like creating a mental image of all the conversations that a chatbot should be aware of, together with what kind of expressions should trigger each conversation.
 
-> It is important to understand that the NLP Model is specific to the scenarios that is meant to deal with. So, a banking chatbot should be able to understand and respond to Bank related requests (like: "How can I change the limit on my credit card?"), while a shopping chatbot should be able to deal with conversation helping a happy shopper.
+> It is important to understand that the NLP Model is specific to the scenarios that is meant to deal with. So, a banking chatbot should be able to understand and respond to bank related requests (like: "How can I change the limit on my credit card?"), while a shopping chatbot should be able to deal with conversation helping a happy shopper.
 
 **Example**
 
@@ -152,13 +153,12 @@ Finally, we can represent the whole model in a Venn Diagram, where:
 
 ## Matching User Expressions
 
-Once, your chatbot has a trained NLP Model, it can attempt to communicate with users.
+Once your chatbot has a trained NLP Model, it can attempt to communicate with users.
 
 Each time the user says something, NLP handles the input in the following steps:
 
 - (1) finds matching conversations
 - (2) score the best match
-
 - (3) respond to the user
 
 ### Finding Matching Conversations
@@ -166,7 +166,7 @@ Each time the user says something, NLP handles the input in the following steps:
 To find matching conversations NLP takes the expression said by the user and splits it into tokens.
 Then it compares the user tokens with those in the NLP Model, to find all matching tokens and the matching conversations.
 
-As a result of which, NLP should be able to identify, which conversation matched the most tokens and the quality of each token match.
+As a result of which, NLP should be able to identify which conversation matched the most tokens and the quality of each token match.
 
 **Example #1** - Where is your office located?
 
@@ -237,9 +237,9 @@ From a high-level view NLP is a fairly straightforward process — altough the d
 If you want to improve your chatbots understanding of the user input, then make sure to give it more helpful training data:
 
 - help it understand which words should be considered more important, by repeating the important words
--  if reasonably possible, avoid expressions that have too many penalised words
+- if reasonably possible, avoid expressions that have too many penalised words
 
-But also, you should be able to understand, when and why  adding a new conversations to the training set, could potentially make previously high confidence conversations start giving lower confidence scores.
+But also, you should be able to understand when and why adding a new conversations to the training set could potentially make previously high confidence conversations start giving lower confidence scores.
 
 ### Give us a shout
 
